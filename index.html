@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="left-col" class="col-8 p-0">
+          <div id="window-1"></div>
+          <div id="window-2">
+            <div
+              id="box"
+              class="d-flex justify-content-center align-items-center"
+            >
+              <h1 id="position-name">Static</h1>
+            </div>
+          </div>
+          <div id="window-3"></div>
+          <div id="window-4"></div>
+        </div>
+        <div id="right-col" class="col px-5">
+          <h1>Position control</h1>
+          <div>
+            <label for="height" class="form-label">Position type</label>
+            <select
+              name="position-type"
+              id="position-type"
+              class="form-select"
+              aria-label="position type select"
+            >
+              <option value="static">Static</option>
+              <option value="absolute">Absolute</option>
+              <option value="relative">Relative</option>
+              <option value="fixed">Fixed</option>
+              <option value="sticky">Sticky</option>
+            </select>
+            <label for="top" class="form-label mt-2">Top (px)</label>
+            <input
+              type="text"
+              name="top"
+              id="top"
+              class="form-control"
+              value="0"
+            />
+            <label for="left" class="form-label mt-2">Left (px)</label>
+            <input
+              type="text"
+              name="left"
+              id="left"
+              class="form-control"
+              value="0"
+            />
+            <label for="bottom" class="form-label mt-2">Bottom (px)</label>
+            <input
+              type="text"
+              name="bottom"
+              id="bottom"
+              class="form-control"
+              value="0"
+            />
+            <label for="right" class="form-label mt-2">Right (px)</label>
+            <input
+              type="text"
+              name="right"
+              id="right"
+              class="form-control"
+              value="0"
+            />
+          </div>
+          <h1 class="mt-4">Box properties</h1>
+          <label for="width" class="form-label mt-2">Width (px)</label>
+          <input
+            type="text"
+            name="width"
+            id="width"
+            class="form-control"
+            value="200"
+          />
+          <label for="height" class="form-label mt-2">Height (px)</label>
+          <input
+            type="text"
+            name="height"
+            id="height"
+            class="form-control"
+            value="200"
+          />
+          <button id="render" class="btn btn-dark mt-2">Render</button>
+          <button id="reset" class="btn btn-dark mt-2">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

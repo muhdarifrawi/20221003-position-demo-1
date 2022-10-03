@@ -1,0 +1,31 @@
+#window-1 {
+  background-color: darkkhaki;
+  height: 50vh;
+}
+#window-2 {
+  background-color: darkolivegreen;
+  height: 50vh;
+}
+#window-3 {
+  background-color: darkseagreen;
+  height: 50vh;
+}
+#window-4 {
+  background-color: darkslategray;
+  height: 50vh;
+}
+#left-col {
+  /* width: auto; */
+}
+#right-col {
+  background-color: cornsilk;
+}
+#box {
+  height: 200px;
+  width: 200px;
+  background-color: darkmagenta;
+}
+
+#position-name {
+  color: white;
+}
